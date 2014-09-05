@@ -37,8 +37,23 @@
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 
 ;; No moar backspaces
-(global-set-key "\C-w" 'backward-kill-word)
-(global-set-key "\C-x\C-k" 'kill-region)
+;; (global-set-key "\C-w" 'kill-region-or-word)
+;; (global-set-key "\C-x\C-k" 'kill-region)
+(defmacro define-2bind-transient-mode (funname cmd-mark-active
+                                                   cmd-mark-no-active)
+  `(defun ,funname ()
+     (interactive)
+     (if mark-active
+       (call-interactively ,cmd-mark-active)
+       (call-interactively ,cmd-mark-no-active))))
+
+(define-2bind-transient-mode
+  backward-kill-word-or-kill-region
+  'kill-region
+  'backward-kill-word)
+
+(global-set-key "\C-w"     'backward-kill-word-or-kill-region)
+
 
 ;; Strip the UI clean
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
