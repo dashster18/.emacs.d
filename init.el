@@ -127,6 +127,13 @@
     (w32-send-sys-command 61488)))
 (add-hook 'window-setup-hook 'maximize-frame t)
 
+(defun frame-bck()
+  (interactive)
+  (other-window -1)
+)
+
+(global-set-key (kbd "C-.") 'other-window)        ; move to next window
+(global-set-key (kbd "C-,") 'frame-bck)           ; move to previous window
 (global-set-key [M-left] 'windmove-left)          ; move to left windnow
 (global-set-key [M-right] 'windmove-right)        ; move to right window
 (global-set-key [M-up] 'windmove-up)              ; move to upper window
@@ -150,3 +157,4 @@
  )
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
