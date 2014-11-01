@@ -3,7 +3,7 @@
 ;;
 (require 'package)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/"))
+	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 ;;
@@ -20,7 +20,12 @@
 ;; Intelligent semi-automatic indentation, mark two. How to enable:
 ;;
 (custom-set-variables
- '(haskell-mode-hook '(turn-on-haskell-indentation)))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (wombat)))
+ '(haskell-mode-hook (quote (turn-on-haskell-indentation))))
 
 ;;
 ;; IDO mode
@@ -156,6 +161,12 @@
 (add-hook 'window-setup-hook 'maximize-frame t)
 
 ;;
+;; Start emacs fullscreen on Linux
+;;
+;; (custom-set-variables
+;;  '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
+;;
 ;; Navigation between windows
 ;;
 
@@ -164,8 +175,8 @@
   (other-window -1)
 )
 
-(global-set-key (kbd "C-.") 'other-window)        ; move to next window
-(global-set-key (kbd "C-,") 'frame-bck)           ; move to previous window
+(global-set-key (kbd "<s-tab>") 'other-window)    ; move to next window
+(global-set-key (kbd "<s-S-tab>") 'frame-bck)     ; move to previous window
 (global-set-key [M-left] 'windmove-left)          ; move to left windnow
 (global-set-key [M-right] 'windmove-right)        ; move to right window
 (global-set-key [M-up] 'windmove-up)              ; move to upper window
@@ -195,8 +206,22 @@
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
-;;
-;; PowerShell!
-;;
-(autoload 'powershell "powershell" "Run powershell as a shell within emacs." t) 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
+;;
+;; Change highlight color
+;;
+(set-face-attribute 'region nil :background "#ff009a")
+
+;;
+;; org mode stuff
+;;
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+(setq org-agenda-files (list "~/org/tasks.org"))
