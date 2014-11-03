@@ -162,9 +162,9 @@
 
 ;;
 ;; Start emacs fullscreen on Linux
-;;
-;; (custom-set-variables
-;;  '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ;;
 ;; Navigation between windows
@@ -216,7 +216,7 @@
 ;;
 ;; Change highlight color
 ;;
-(set-face-attribute 'region nil :background "#ff009a")
+;; (set-face-attribute 'region nil :background "#ff009a")
 
 ;;
 ;; org mode stuff
