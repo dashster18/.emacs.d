@@ -225,3 +225,13 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-agenda-files (list "~/org/tasks.org"))
+
+;; 
+;; Indent whole buffer 
+;; 
+(defun indent-buffer ()
+  (interactive)
+  (save-excursion 
+    (indent-region (point-min) (point-max) nil)))
+
+(global-set-key "\C-x\C-j" 'indent-buffer)
