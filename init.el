@@ -176,7 +176,7 @@
 )
 
 (global-set-key (kbd "<s-tab>") 'other-window)    ; move to next window
-(global-set-key (kbd "<s-S-tab>") 'frame-bck)     ; move to previous window
+(global-set-key (kbd "<s-S-iso-lefttab>") 'frame-bck)     ; move to previous window
 (global-set-key [M-left] 'windmove-left)          ; move to left windnow
 (global-set-key [M-right] 'windmove-right)        ; move to right window
 (global-set-key [M-up] 'windmove-up)              ; move to upper window
