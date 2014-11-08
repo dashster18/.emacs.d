@@ -24,8 +24,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (wombat)))
- '(haskell-mode-hook (quote (turn-on-haskell-indentation))))
+ '(custom-enabled-themes (quote (tango-dark)))
+ '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ;;
 ;; IDO mode
@@ -163,8 +164,7 @@
 ;;
 ;; Start emacs fullscreen on Linux
 
-(custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 
 ;;
 ;; Navigation between windows
@@ -235,3 +235,4 @@
     (indent-region (point-min) (point-max) nil)))
 
 (global-set-key "\C-x\C-j" 'indent-buffer)
+(put 'narrow-to-region 'disabled nil)
