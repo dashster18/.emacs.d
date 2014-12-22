@@ -236,3 +236,10 @@
 
 (global-set-key "\C-x\C-j" 'indent-buffer)
 (put 'narrow-to-region 'disabled nil)
+
+;;
+;; Transparency
+;; 
+;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
+(set-frame-parameter (selected-frame) 'alpha '(91 91))
+(add-to-list 'default-frame-alist '(alpha 91 91))
