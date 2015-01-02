@@ -90,7 +90,7 @@
 ;;
 ;; Turn off line wrapping
 ;;
-;(setq-default truncate-lines t)
+(setq-default truncate-lines t)
 
 ;;
 ;; Open .h files in C++ mode
