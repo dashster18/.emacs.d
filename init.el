@@ -1,18 +1,27 @@
-;;
-;; Marmalade 
-;;
 (require 'package)
 (add-to-list 'package-archives
 	     '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;;
-;; Melpa
-;;
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
+
+
+;; Add ./lisp directory to search path
+;;
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+
+(require 'init-utils)
+(require 'init-elpa)
+(require 'init-flycheck)
+(require 'init-xterm)
+(require 'init-csv)
+(require 'init-python-mode)
+(require 'init-haskell)
+(require 'init-sql)
+
 
 ;;
 ;; Haskell indentation mode
@@ -24,7 +33,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (tango-dark)))
+ '(ansi-color-names-vector ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(custom-enabled-themes (quote (wombat)))
+ '(custom-safe-themes (quote ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "31a01668c84d03862a970c471edbd377b2430868eccf5e8a9aec6831f1a0908d" "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
  '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
@@ -239,3 +250,4 @@
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(91 91))
 (add-to-list 'default-frame-alist '(alpha 91 91))
+
