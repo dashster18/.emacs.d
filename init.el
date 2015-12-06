@@ -1,12 +1,16 @@
-(require 'package)
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
+(require 'server)
+(unless (server-running-p)
+  (server-start)) 
 
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(package-initialize)
+;; (require 'package)
+;; (add-to-list 'package-archives
+;; 	     '("marmalade" . "https://marmalade-repo.org/packages/"))
+;; (package-initialize)
+
+;; (require 'package)
+;; (add-to-list 'package-archives
+;;              '("melpa" . "https://melpa.org/packages/")
+;; (package-initialize)
 
 
 ;; Add ./lisp directory to search path
@@ -15,29 +19,22 @@
 
 (require 'init-utils)
 (require 'init-elpa)
-(require 'init-flycheck)
 (require 'init-xterm)
-(require 'init-csv)
 (require 'init-python-mode)
-(require 'init-haskell)
-(require 'init-sql)
+(require 'scope-mode)
 
-
-;;
-;; Haskell indentation mode
-;; `haskell-indentation', Kristof Bastiaensen
-;; Intelligent semi-automatic indentation, mark two. How to enable:
-;;
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(ansi-color-names-vector
+   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (wombat)))
- '(custom-safe-themes (quote ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "31a01668c84d03862a970c471edbd377b2430868eccf5e8a9aec6831f1a0908d" "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
- '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
+ '(custom-safe-themes
+   (quote
+    ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" "31a01668c84d03862a970c471edbd377b2430868eccf5e8a9aec6831f1a0908d" "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" default)))
+ '(py-split-windows-on-execute-function (quote split-window-horizontally)))
 
 ;;
 ;; IDO mode
@@ -124,7 +121,7 @@
 ;;
 ;; Use Octave mode for all .m files
 ;;
-(autoload 'octave-mode "octave-mod" nil t)
+(autoload 'octave-mode "octave-mode" nil t)
           (setq auto-mode-alist
                 (cons '("\\.m$" . octave-mode) auto-mode-alist))
 
@@ -170,7 +167,7 @@
   ;; `SC_MAXIMIZE' parameter.
   (when (eq system-type 'windows-nt)
     (w32-send-sys-command 61488)))
-(add-hook 'window-setup-hook 'maximize-frame t)
+;; (add-hook 'window-setup-hook 'maximize-frame t)
 
 
 ;;
@@ -250,4 +247,3 @@
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(91 91))
 (add-to-list 'default-frame-alist '(alpha 91 91))
-
