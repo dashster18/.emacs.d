@@ -22,6 +22,7 @@
 (require 'init-xterm)
 (require 'init-python-mode)
 (require 'scope-mode)
+(require 'smooth-scrolling)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -247,3 +248,14 @@
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(91 91))
 (add-to-list 'default-frame-alist '(alpha 91 91))
+
+
+;;
+;; JS Mode configuration
+;;
+(load "js-config.el")
+(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
