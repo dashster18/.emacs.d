@@ -13,6 +13,9 @@
 (require 'init-xterm)
 (require 'init-python-mode)
 (require 'scope-mode)
+(require 'smooth-scrolling)
+(require 'compile)
+(load "defuns-config.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
