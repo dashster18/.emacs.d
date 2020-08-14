@@ -15,6 +15,7 @@
 (require 'scope-mode)
 (require 'smooth-scrolling)
 (require 'compile)
+(global-display-line-numbers-mode)
 (load "defuns-config.el")
 
 (custom-set-variables

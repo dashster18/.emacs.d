@@ -16,8 +16,8 @@
 ;;
 ;; Line numbers
 ;;
-(global-linum-mode t)
-(setq column-number-mode t)
+;; (global-linum-mode t)
+;; (setq column-number-mode t)
 
 ;;
 ;; No moar backspaces
