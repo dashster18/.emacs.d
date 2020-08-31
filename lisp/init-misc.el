@@ -45,11 +45,6 @@
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
 ;;
-;; Smooth scrolling
-;;
-(setq scroll-step 1) ;; keyboard scroll one line at a time
-
-;;
 ;; Turn off line wrapping
 ;;
 (setq-default truncate-lines t)
@@ -183,16 +178,8 @@
 ;;
 ;; Python mode
 ;;
-(setq python-shell-interpreter "ipython"
-      python-shell-interpreter-args "-i")
+(setq python-shell-interpreter "ipython")
+;      python-shell-interpreter-args "-i")
 
 
 (provide 'init-misc)
-
-
-
-
-
-
-
-
