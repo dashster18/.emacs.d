@@ -178,7 +178,7 @@
 ;;
 ;; Python mode
 ;;
-(setq python-shell-interpreter "ipython")
+;(setq python-shell-interpreter "ipython")
 ;      python-shell-interpreter-args "-i")
 
 
