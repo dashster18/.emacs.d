@@ -11,12 +11,11 @@
 (require 'init-utils)
 (require 'init-elpa)
 (require 'init-xterm)
-(require 'init-python-mode)
+;(require 'init-python-mode)
 (require 'scope-mode)
 (require 'smooth-scrolling)
 (require 'compile)
 (global-display-line-numbers-mode)
-(load "defuns-config.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

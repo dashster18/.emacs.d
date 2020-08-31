@@ -16,8 +16,7 @@
 ;;
 ;; Line numbers
 ;;
-;; (global-linum-mode t)
-;; (setq column-number-mode t)
+(global-display-line-numbers-mode)
 
 ;;
 ;; No moar backspaces
@@ -35,7 +34,7 @@
   'kill-region
   'backward-kill-word)
 
-(global-set-key "\C-w"     'backward-kill-word-or-kill-region)
+(global-set-key "\C-w" 'backward-kill-word-or-kill-region)
 
 
 ;;
@@ -180,6 +179,12 @@
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(91 91))
 (add-to-list 'default-frame-alist '(alpha 91 91))
+
+;;
+;; Python mode
+;;
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i")
 
 
 (provide 'init-misc)
