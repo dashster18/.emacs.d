@@ -1,0 +1,47 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/niks/.emacs.d/" . "elpa/")
+ ("/home/niks/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/niks/"
+ "/home/niks/personalFinance/"
+ "/home/niks/.emacs.d/"
+ "/home/niks/code/"
+ "/home/niks/.emacs.d/elpa/"
+ "/home/niks/.emacs.d/lisp/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".tmux.conf"
+ "edhec_risk_kit.py"
+ "init.el"
+ "scratch.py"
+ "init-misc.el"
+ "defuns-config.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/niks/" (24665 6885 70000 0) "./" "../" ".ipython/" ".lesshst" ".node_repl_history" "code/" ".yarn/" ".local/" ".emacs.d/" ".bashrc" "seaborn-data/" ".tldr/" ".bash_logout" ".ssh/" ".jupyter/" ".profile" "personalFinance/" ".config/" "kaggle/" ".tmux.conf" "anaconda3/" ".saves/" ".bash_history" ".cache/" ".conda/" ".gitconfig" "missing-semester/" ".npm/" ".git-credentials" ".python_history")
+
+ ("/home/niks/.emacs.d/" (24476 34670 660000 0) "./" "../" "ac-comphist.dat" "ido.last" "ido.last~" "auto-save-list/" "url/" "network-security.data" "transient/" ".git/" "ScopeKeywords.txt" "lisp/" "anaconda-mode/" "elpa/" ".gitignore" "init.el")
+
+ ("/home/niks/personalFinance/" (24497 55394 550000 0) "./" "../" "RiskAdjustedReturns.ipynb" "Drawdown.ipynb" ".ipynb_checkpoints/" "BuildingModules.ipynb" "BasicsOfReturns.ipynb" ".git/" "README.md" ".gitignore" "data/")
+
+ ("/home/niks/.emacs.d/lisp/" (24397 25138 320000 0) "./" "../" "node_emacs" "init-elpa.el" "smooth-scrolling.el" "scope-mode.el" "init-xterm.el" "init-frame-hooks.el" "init-python-mode.el" "js-config.el" "init-utils.el" "init-misc.el" "js-comint.el")
+
+ ("/home/niks/.emacs.d/elpa/" (24397 25102 280000 0) "async-20151123.256/" "./" "lv-20200507.1518/" "python-mode-readme.txt" "../" "request-20200517.1305/" "smartparens-20200324.2147/" "magit-popup-20200719.1015/" "fullframe-20140619.305/" "0x0-readme.txt" "seq-20151121.1017/" "async-20200809.501/" "pythonic-20200806.434/" "epl-20150326.1212/" "let-alist-1.0.4/" "smartparens-1.6.1/" "fullframe-20170816.1003/" "pkg-info-20140610.630/" "ein-readme.txt" "dash-2.12.1/" "git-commit-20200828.1753/" "archives/" "anaconda-mode-20200806.436/" "color-theme-monokai-0.0.5/" "color-theme-solarized-20150410.1248/" "s-20180406.808/" "with-editor-20200720.2014/" "pkg-info-20150517.1143/" "popup-20200610.317/" "with-editor-20151126.323/" "pip-requirements-20150423.1358/" "dash-20151021.113/" "pip-requirements-20181027.1629/" "f-20191110.1357/" "dash-20200803.1520/" "0blayout-readme.txt" "color-theme-20190220.1115/" "websocket-readme.txt" "transient-20200819.1133/" "popup-20140207.1702/" "magit-20151205.1243/" "git-commit-20151111.418/" "auto-complete-20140208.653/" "websocket-20200419.2124/" "websocket-20141226.1957/" "color-theme-20080305.34/" "python-mode-20150113.931/" "ecb-readme.txt" "dash-readme.txt" "request-20140316.417/" "epl-20180205.2049/" "magit-popup-20151126.343/" "magit-20200829.1629/" "haskell-mode-readme.txt" "auto-complete-readme.txt")
+
+ ("/home/niks/code/" (24397 31912 960000 0) "./" "../" "#scratch.py#" "scratch.py")
+
+ ("/mnt/c/Users/niksr/" (24420 57717 779427 900000) "Videos/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "random.dat" "PrintHood/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "jagex_cl_oldschool_LIVE.dat" "jagexcache/" "IntelGraphicsProfiles/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" "3D Objects/" ".vscode/" ".templateengine/" ".runelite/" ".python_history" ".pylint.d/" ".matplotlib/" ".jupyter/" ".ipython/" ".empty/" ".dotnet/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
