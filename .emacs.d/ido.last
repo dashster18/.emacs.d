@@ -8,6 +8,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/niks/"
  "/home/niks/dotfiles/"
  "/home/niks/personalFinance/"
  "/home/niks/.emacs.d/"
@@ -28,11 +29,11 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/niks/" (24665 10861 10000 0) "./" "../" ".ipython/" ".lesshst" ".node_repl_history" "code/" ".yarn/" ".local/" ".emacs.d/" ".bashrc" "seaborn-data/" ".tldr/" ".bash_logout" ".ssh/" ".jupyter/" ".profile" "personalFinance/" ".config/" "kaggle/" ".tmux.conf" "dotfiles/" "anaconda3/" ".saves/" ".bash_history" ".cache/" ".conda/" ".gitconfig" "missing-semester/" ".npm/" ".git-credentials" ".python_history")
+
  ("/home/niks/dotfiles/" (24665 10367 880000 0) "./" "../" ".emacs.d/" ".bashrc" ".git/" ".tmux.conf" ".gitignore")
 
  ("/home/niks/dotfiles/.git/" (24665 10370 960000 0) "logs/" "./" "../" "refs/" "ORIG_HEAD" "info/" "objects/" "COMMIT_EDITMSG" "hooks/" "FETCH_HEAD" "description" "config" "packed-refs" "branches/" "HEAD" "index")
-
- ("/home/niks/" (24656 51684 30000 0) "./" "../" ".ipython/" ".lesshst" ".node_repl_history" "code/" ".yarn/" ".local/" ".emacs.d/" ".bashrc" "seaborn-data/" ".bash_logout" ".ssh/" ".jupyter/" ".profile" "personalFinance/" ".config/" "kaggle/" "anaconda3/" ".saves/" ".bash_history" ".cache/" ".conda/" ".gitconfig" ".npm/" ".git-credentials" ".python_history")
 
  ("/home/niks/.emacs.d/" (24476 34670 660000 0) "./" "../" "ac-comphist.dat" "ido.last" "ido.last~" "auto-save-list/" "url/" "network-security.data" "transient/" ".git/" "ScopeKeywords.txt" "lisp/" "anaconda-mode/" "elpa/" ".gitignore" "init.el")
 
