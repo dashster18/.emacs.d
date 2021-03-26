@@ -87,12 +87,14 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
+# some more aliases
 alias ll='ls -lah'
 alias la='ls -A'
 alias l='ls -CF'
 alias xo='xdg-open'
 alias wo='wsl-open'
+alias gs='git status'
+alias gl='git log --all --graph --decorate'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

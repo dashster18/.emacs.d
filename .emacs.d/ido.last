@@ -8,6 +8,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/mnt/c/Users/niksr/image-knowledge/CrowdEntityVerification/GoldHits/"
+ "/mnt/c/Users/niksr/image-knowledge/CrowdEntityVerification/"
  "/home/niks/"
  "/home/niks/dotfiles/"
  "/home/niks/personalFinance/"
@@ -19,6 +21,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "Round2_Taskfile_Qualification.tsv"
+ "Round2_Taskfile_Training.tsv"
  ".gitignore"
  "edhec_risk_kit.py"
  "init.el"
@@ -29,15 +33,19 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/niks/" (24665 10861 10000 0) "./" "../" ".ipython/" ".lesshst" ".node_repl_history" "code/" ".yarn/" ".local/" ".emacs.d/" ".bashrc" "seaborn-data/" ".tldr/" ".bash_logout" ".ssh/" ".jupyter/" ".profile" "personalFinance/" ".config/" "kaggle/" ".tmux.conf" "dotfiles/" "anaconda3/" ".saves/" ".bash_history" ".cache/" ".conda/" ".gitconfig" "missing-semester/" ".npm/" ".git-credentials" ".python_history")
+ ("/mnt/c/Users/niksr/image-knowledge/CrowdEntityVerification/GoldHits/" (24665 24763 370717 900000) "Round2_Taskfile_Qualification.tsv" "OESMeasurementSet_Feb22_2021_Taskfile.tsv" "MSet2K.ss.csv" "MMEntityTaggingVerification_OriginalTaskFile_RTA.tsv" "MMEntityTaggingVerification_OriginalTaskFile_Qualification.tsv" "MMEntityTaggingVerification_OriginalTaskFile_Preview.tsv" "ImageEntityTaggingCorrectnessVerification_TaskFile_Qualification.tsv" "ImageEntityTaggingCorrectnessVerification_TaskFile_Preview.tsv" "ImageEntityTaggingCorrectnessVerification_TaskFile_Experiment0.tsv" "GoldHits_RandomSampleImagesFromMeasurementTaskfile.tsv" "GoldHits_RandomSampleEntitiesFromMeasurementTaskfile_fixed_galleries.tsv" "GoldHits_RandomSampleEntitiesFromMeasurementTaskfile_fixed.tsv" "GoldHits_RandomSampleEntitiesFromMeasurementTaskfile.tsv" "Experiment2_betterLabel_managed_hits.txt" ".ipynb_checkpoints/" ".#Round2_Taskfile_Training.tsv" "../" "./")
 
- ("/home/niks/dotfiles/" (24665 10367 880000 0) "./" "../" ".emacs.d/" ".bashrc" ".git/" ".tmux.conf" ".gitignore")
+ ("/home/niks/.emacs.d/" (24665 14636 450000 0) "./" "../" "ac-comphist.dat" "ido.last" "auto-save-list/" "url/" "network-security.data" "transient/" "ScopeKeywords.txt" "lisp/" "anaconda-mode/" "elpa/" "init.el")
+
+ ("/home/niks/personalFinance/" (24613 38900 990000 0) "edhec_risk_kit_203.py" "12_CPPIAndDrawdownConstraints.ipynb" "./" "../" "21_DynamicRiskBudgetingBetweenPSPAndLHP.ipynb" "15_MonteCarloSimulationsOfCPPIAndGBM.ipynb" "06_EfficientFrontierPart1.ipynb" "24_ComparingEWAndCapWeightedPortfolios.ipynb" "08_EfficientFrontierPart3.ipynb" "28_RiskContributionsAndRiskParity.ipynb" "10_MarkowitzLackOfRobustnessAndTheGMV.ipynb" "Scratch.ipynb" "edhec_risk_kit.py" "edhec_risk_kit_205.py" "13_RandomWalksAndMonteCarlo.ipynb" "23_SharpeStyleAnalysis.ipynb" "01_RiskAdjustedReturns.ipynb" "20_NaiveRiskBudgetingBetweenThePSPAndGHP.ipynb" ".ipynb_checkpoints/" "edhec_risk_kit_206.py" "11_LimitsOfDiversification.ipynb" "edhec_risk_kit_202.py" "16_PresentValuesOfLiabilitiesAndFundingRatio.ipynb" "edhec_risk_kit_204.py" "InteractiveEfficientFrontier.ipynb" "27_BlackLittermanModel.ipynb" "22_FactorAnalysisUsingCAPMAndFamaFrenchFactorModels.ipynb.ipynb" "edhec_risk_kit_201.py" "14_IPYWidgets.ipynb" "04_DeviationsFromNormality.ipynb" "03_BuildingModules.ipynb" "05_DownsideMeasures.ipynb" ".git/" "07_EfficientFrontierPart2.ipynb" "02_Drawdown.ipynb" "19_MonteCarloSimulationOfCouponBearingBondsUsingCIR.ipynb" "README.md" "18_LiabilityDrivenInvesting.ipynb" "09_MaxSharpeRatioPortfolio.ipynb" "__pycache__/" ".gitignore" "25_BackTestingEWVsCW.ipynb" "26_EstimatingCovarianceAndExpectedReturns.ipynb" "DistributionOfMarketReturns.ipynb" "17_CIRModelAndCashVsZCBonds.ipynb" "00_BasicsOfReturns.ipynb" "SocialSecurityBenefitsAnalysis.ipynb" "data/")
+
+ ("/home/niks/dotfiles/" (24665 14635 670000 0) "./" "../" ".emacs.d/" ".bashrc" "setup.sh" ".git/" ".tmux.conf" ".gitignore")
+
+ ("/home/niks/" (24665 14660 160000 0) "./" "../" ".ipython/" ".lesshst" ".node_repl_history" "code/" ".yarn/" ".local/" ".emacs.d/" ".bashrc" "seaborn-data/" ".tldr/" ".bash_logout" ".ssh/" ".jupyter/" ".profile" "personalFinance/" ".config/" "kaggle/" ".tmux.conf" "dotfiles/" "anaconda3/" ".saves/" ".bash_history" ".cache/" ".conda/" ".gitconfig" "missing-semester/" ".npm/" ".git-credentials" ".python_history")
+
+ ("/mnt/c/Users/niksr/image-knowledge/CrowdEntityVerification/" (24655 65032 414648 200000) "SplitHitsIntoMultipleTasks.ipynb" "SampleGoldHits.ipynb" "ReKeyHits.ipynb" "hitappQualityImprovementIdeasFromDaniel.txt" "GoldHits/" "data/" "Analysis_Experiment2.ipynb" "Analysis_Experiment1.ipynb" "Analysis_Experiment0.ipynb" ".ipynb_checkpoints/" "../" "./")
 
  ("/home/niks/dotfiles/.git/" (24665 10370 960000 0) "logs/" "./" "../" "refs/" "ORIG_HEAD" "info/" "objects/" "COMMIT_EDITMSG" "hooks/" "FETCH_HEAD" "description" "config" "packed-refs" "branches/" "HEAD" "index")
-
- ("/home/niks/.emacs.d/" (24476 34670 660000 0) "./" "../" "ac-comphist.dat" "ido.last" "ido.last~" "auto-save-list/" "url/" "network-security.data" "transient/" ".git/" "ScopeKeywords.txt" "lisp/" "anaconda-mode/" "elpa/" ".gitignore" "init.el")
-
- ("/home/niks/personalFinance/" (24497 55394 550000 0) "./" "../" "RiskAdjustedReturns.ipynb" "Drawdown.ipynb" ".ipynb_checkpoints/" "BuildingModules.ipynb" "BasicsOfReturns.ipynb" ".git/" "README.md" ".gitignore" "data/")
 
  ("/home/niks/.emacs.d/lisp/" (24397 25138 320000 0) "./" "../" "node_emacs" "init-elpa.el" "smooth-scrolling.el" "scope-mode.el" "init-xterm.el" "init-frame-hooks.el" "init-python-mode.el" "js-config.el" "init-utils.el" "init-misc.el" "js-comint.el")
 
